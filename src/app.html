@@ -21,12 +21,18 @@
 				--shell: oklab(80% -2% 2%);
 				--paper: oklab(90% -2% 2%);
 				--white: oklab(100% -2% 2%);
+
+				scroll-behavior: smooth;
+				scroll-padding-top: 1em;
+				scrollbar-width: thin;
+				scrollbar-color: var(--coral) var(--night);
 			}
 
 			body {
 				margin: 0;
 
 				font-family: "Comfortaa";
+				line-height: 1.5;
 
 				background-color: var(--black);
 				color: var(--white);
@@ -50,9 +56,8 @@
 				--highlight-ratio: 100%;
 			}
 
-			@property --highlight-ratio {
-				syntax: "<percentage>";
-				inherits: false;
+			strong {
+				text-shadow: 0 0 0.5em currentColor;
 			}
 		</style>
 		%sveltekit.head%
