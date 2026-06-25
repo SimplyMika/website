@@ -20,11 +20,10 @@
 		align-items: start;
 		gap: 2em;
 
-		padding: 4em;
+		padding-block: 4em;
 	}
 	@container (width < 32rem) {
 		header {
-			padding-inline: 0;
 			flex-direction: column;
 		}
 	}
