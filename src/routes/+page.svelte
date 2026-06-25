@@ -77,8 +77,8 @@
 	<h2><a href="#projects">#3</a> Personal projects I'm most proud of</h2>
 	<h3>TransL</h3>
 	<p>
-		TransL is a Discord translation bot. It features deep integration into the Discord ecosystem via Slash Commands, and it
-		translates messages via the hugely popular and particularly accurate DeepL Translator.
+		TransL is a Discord <strong>translation bot</strong>. It features deep integration into the Discord ecosystem via Slash
+		Commands, and it translates messages via the hugely popular and particularly accurate <strong>DeepL Translator</strong>.
 	</p>
 	<p>
 		It's written in pure Kotlin with the Kord framework, which I extended with my own purpose-built functions and classes. It's
@@ -86,7 +86,9 @@
 	</p>
 	<p>Have a look on <a href="https://github.com/SimplyMika/transl">GitHub</a>.</p>
 	<h3>Twirl</h3>
-	<p>Twirl brings a whole bunch of different loading spinner designs for the commandline into the Zig ecosystem.</p>
+	<p>
+		Twirl brings a whole bunch of different <strong>loading spinner</strong> designs for the commandline into the Zig ecosystem.
+	</p>
 	<p>
 		Its API is extremely flexible with every possible use-case being possible, be it a dead-simple sleep-loop or highly complex
 		custom display logic.
@@ -94,8 +96,9 @@
 	<p>Twirl is hosted on <a href="https://codeberg.org/SimplyMika/twirl">Codeberg</a>.</p>
 	<h3>libautomate</h3>
 	<p>
-		libautomate is a Zig library for desktop automation on Windows, MacOS, and Linux. It's part of a bigger project called
-		NeoHotkey, which will be a fully modernized replacement of the scripting language AutoHotkey (once it's finished).
+		libautomate is a Zig library for <strong>desktop automation</strong> on Windows, MacOS, and Linux. It's part of a bigger
+		project called <strong>NeoHotkey</strong>, which will be a fully modernized replacement of the scripting language AutoHotkey
+		(once it's finished).
 	</p>
 	<p>libautomate is far from complete as of yet.</p>
 	<p>
@@ -168,5 +171,13 @@
 
 		width: fit-content;
 		width: calc-size(fit-content, round(up, size, 2em));
+	}
+
+	h3 {
+		margin-block-end: 0.5em;
+	}
+
+	p {
+		margin: 0;
 	}
 </style>
