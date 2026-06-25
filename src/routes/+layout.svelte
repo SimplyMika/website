@@ -2,6 +2,7 @@
 	import { resolve } from "$app/paths";
 	import { page } from "$app/state";
 	import favicon from "$lib/assets/favicon.svg";
+	import { fly } from "svelte/transition";
 
 	let { children } = $props();
 </script>
@@ -19,9 +20,11 @@
 		</nav>
 	</header>
 
-	<main>
-		{@render children()}
-	</main>
+	{#key page.url.pathname}
+		<main in:fly={{ x: "4em" }} out:fly={{ x: "-4em" }}>
+			{@render children()}
+		</main>
+	{/key}
 </div>
 
 <style>
@@ -38,10 +41,13 @@
 
 		box-sizing: border-box;
 		min-height: 100vh;
+
+		overflow-x: hidden;
 	}
 
 	header {
 		grid-row: head;
+		grid-column: 1;
 
 		display: flex;
 		flex-direction: row;
@@ -51,6 +57,7 @@
 
 	main {
 		grid-row: main;
+		grid-column: 1;
 
 		container-type: inline-size;
 	}
