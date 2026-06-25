@@ -36,6 +36,7 @@
 
 		background-color: var(--night);
 
+		box-sizing: border-box;
 		min-height: 100vh;
 	}
 
@@ -50,6 +51,8 @@
 
 	main {
 		grid-row: main;
+
+		container-type: inline-size;
 	}
 
 	.mika {

@@ -49,6 +49,11 @@
 			a:active {
 				--highlight-ratio: 100%;
 			}
+
+			@property --highlight-ratio {
+				syntax: "<percentage>";
+				inherits: false;
+			}
 		</style>
 		%sveltekit.head%
 	</head>
