@@ -172,12 +172,4 @@
 		width: fit-content;
 		width: calc-size(fit-content, round(up, size, 2em));
 	}
-
-	h3 {
-		margin-block-end: 0.5em;
-	}
-
-	p {
-		margin: 0;
-	}
 </style>
